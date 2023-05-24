@@ -5,7 +5,7 @@
         aria-expanded="false" aria-controls="addComments">
         Add comment
     </button>
-    <div class="collapse" id="addComments">
+    <section class="collapse" id="addComments">
         <div class="card card-body mt-2">
             <form id="form-comment">
                 {% csrf_token %}
@@ -17,9 +17,10 @@
                     <label for="body">Your comment</label>
                     <textarea required class="form-control" id="body" rows="3" name="body"></textarea>
                 </div>
+                <br>
                 <button class="btn btn-primary add-new" type="submit">Submit</button>
             </form>
         </div>
-    </div>
+    </section>
     <div class="comments-list"></div>
 </details>
