@@ -11,8 +11,7 @@ svgObject.addEventListener('load', function() {
     ease: "power2.out",
   });
 
-
-  // //  Це б могло працювати. Але - DrawSVGPlugin.min.js is a Club GreenSock perk
+  // //  Це б можливо могло працювати. Але - DrawSVGPlugin.min.js is a Club GreenSock perk
   // gsap.set(line, { drawSVG: "0%" });
   //
   // gsap.to(line, {
@@ -21,4 +20,19 @@ svgObject.addEventListener('load', function() {
   //   ease: "power2.out",
   // });
 
+
 });
+
+document.addEventListener("DOMContentLoaded", function (){
+  gsap.fromTo(".content_column-animation",{
+      scale: 0.5,
+      opacity: 0.40,
+  },
+    {
+      scale: 1,
+      opacity: 1,
+      duration: 1
+    })
+})
+
+
