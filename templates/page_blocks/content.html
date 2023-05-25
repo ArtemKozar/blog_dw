@@ -1,7 +1,9 @@
 {% load static %}
+<link rel="stylesheet" href="{% static 'article/style.css' %}">
 
-<section class="mt-4 p-5 content">
-    <article class="content_block d-flex flex-column flex-lg-row justify-content-between align-items-center">
+
+<section class="mt-4 p-5">
+    <article class=" content_block d-flex flex-column flex-lg-row justify-content-between align-items-center" >
         <div class="content_block-text">
             <h3>Lorem ipsum dolor</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi officia voluptate nulla dicta sint
@@ -11,11 +13,11 @@
         </div>
         <div class="content_block-image">
             <figure>
-                <img src="{% static 'admin/img/svg/column_type_1.svg' %}" alt="Column">
+                <img  src="{% static 'admin/img/svg/column_type_1.svg' %}" alt="Column">
             </figure>
         </div>
     </article>
-    <article class="content_block d-flex flex-column flex-lg-row justify-content-between align-items-center">
+    <article  class=" reverse content_block d-flex flex-column flex-lg-row justify-content-between align-items-center">
         <div class="content_block-text">
             <h3>Lorem ipsum dolor</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab quos sunt iure assumenda reprehenderit et?
@@ -43,7 +45,7 @@
             <!-- column_type_3.svg -->
         </div>
     </article>
-    <article class="content_block d-flex flex-column flex-lg-row justify-content-between align-items-center">
+    <article class="reverse content_block d-flex flex-column flex-lg-row justify-content-between align-items-center">
         <div class="content_block-text">
             <h3>Lorem ipsum dolor</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab quos sunt iure assumenda reprehenderit et?

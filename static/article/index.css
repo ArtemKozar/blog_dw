@@ -1,5 +1,5 @@
 .chart {
-  width: min(100%, 800px);
+  width: min(100%, 100px);
 }
 
 .content_block-image {
@@ -9,4 +9,5 @@
 .content_block-text {
   width: min(100%, 600px);
 }
+
 
