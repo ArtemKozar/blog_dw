@@ -1,7 +1,6 @@
-
 const svgObject = document.querySelector('.svg-object');
 
-svgObject.addEventListener('load', function() {
+svgObject.addEventListener('load', function () {
   const svgDocument = svgObject.contentDocument;
   const line = svgDocument.querySelector('.Line_1');
 
@@ -23,15 +22,25 @@ svgObject.addEventListener('load', function() {
 
 });
 
-document.addEventListener("DOMContentLoaded", function (){
-  gsap.fromTo(".content_column-animation",{
+
+// gsap.registerPlugin(ScrollTrigger);
+
+document.addEventListener("DOMContentLoaded", function () {
+  gsap.fromTo(".content_column-animation",
+    {
       scale: 0.5,
       opacity: 0.40,
-  },
+    },
     {
       scale: 1,
       opacity: 1,
-      duration: 1
+      duration: 1,
+      scrollTrigger: {
+        trigger: ".scroll-container",
+        start: "top 80%",
+        end: "bottom 20%",
+        toggleActions: "play none none reverse"
+      }
     })
 })
 

@@ -10,4 +10,9 @@
   width: min(100%, 600px);
 }
 
+.reverse{
+  display: flex!important;
+  flex-direction: row-reverse!important;
+}
+
 
