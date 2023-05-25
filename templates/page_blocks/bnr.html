@@ -1,9 +1,20 @@
+{% load static %}
+<!--<script src="{% static 'article/animation.js' %}"></script>-->
+
 <section class="mt-4 p-5 text-black d-flex flex-column align-items-center text-center">
     <div class="info">
         <h1 class="display-4">Hello, world!</h1>
         <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
     </div>
     <div class="chart">
-        <!-- chart.svg -->
+<!--        <iframe src="static/admin/img/svg/chart.svg" alt="Chart"></iframe>-->
+        <object
+                type="image/svg+xml"
+                data="{% static 'admin/img/svg/chart.svg' %}"
+                class="svg-object"
+        ></object>
     </div>
 </section>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.11/dist/gsap.min.js"></script>
+<script src="{% static 'article/animation.js' %}"></script>

@@ -106,3 +106,7 @@ window.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+gsap.to(".chart", {
+  x:200,
+})
