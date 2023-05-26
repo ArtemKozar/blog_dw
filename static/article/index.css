@@ -1,5 +1,6 @@
 .chart {
   width: min(100%, 800px);
+  transform: none!important;
 }
 
 .content_block-image {
